@@ -1,7 +1,8 @@
 
-
 import React ,{useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import '../components/Style/Signup.style.css'
+import { Navbar } from '../components/jsx components/nav'
 export const Signup = () => {
     const navigate = useNavigate()
     // eslint-disable-next-line
@@ -17,28 +18,32 @@ export const Signup = () => {
 
 
         <div className="back">
-          <div className="text">
+          <Navbar/>
+          <br/><br/>
+            <div className="text">
                 <h1>Welcome to the family</h1>
-                <p>let’s get you all set up so you can verify your4 personal account and begin settihng up your profile. </p>
+                <p>let’s get you all set up so you can verify your personal account and begin settihng up your profile. </p>
             </div>
+            <br/><br/>
             <div className="Mid">
-
                 <div className="image">
-                 
-                  
                 </div>
                 <div className="form">
-
+                <h2 >Let's SignUp</h2>
                     <label>Name</label>
                     <br />
-                    <input type="name"
+                    <input
+                      className="input Custom-field"
+                    type="name"
                       placeholder="Your Name"
                       onChange={e => setName(e.target.value)}
                     />
                     <br />
                     <label>Enter Email</label>
                     <br />
-                    <input type="email"
+                    <input 
+                    className="input Custom-field"
+                    type="email"
                       placeholder="Your email"
                       onChange={e => setEmail(e.target.value)}
                       required
@@ -46,15 +51,16 @@ export const Signup = () => {
                     <br />
                     <label>Enter Password</label>
                     <br />
-                    <input
-                      type="password"
+                    <input 
+                     className="input Custom-field"
+                     type="password"
                       placeholder="At least 8 Characters"
                       onChange={e => setPassword(e.target.value)}
                       required
                     />
                     <br />
                     <br />
-                    <div>
+                    <div className="checkbox">
 
                       <input type="checkbox" required />
                       <label>
@@ -62,7 +68,11 @@ export const Signup = () => {
                       </label>
                     </div>
                     <br />
-                    <button  className ="btn"type='summit' onClick={clicked}>Create account</button>
+
+
+                    {/* <button type='summit' onClick={clicked}>Create account</button> */}
+                    {/* <a href="/signup" onClick={clicked} className="btn10"> Create account </a> */}
+                    <a href="/signup" onClick={clicked} className="btn3"> Create account</a>
                 </div>
             </div>
         </div>

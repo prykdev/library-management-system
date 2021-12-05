@@ -1,8 +1,10 @@
 
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 
-import {Signup} from './views/Signup/Signup.page'
-import {Login} from './views/login/Login.page'
+import {Signup} from './views/Signup.page'
+import {Login} from './views/Login.page'
+import { Navbar } from './components/jsx components/nav';
+import { Sidebar } from './components/jsx components/sidebar';
 function App() {
   return (
     // <Signup></Signup>
@@ -11,6 +13,8 @@ function App() {
     <Routes> 
     <Route path='Signup' element={<Signup/>}/>
     <Route path='Login' element={<Login/>}/>
+    <Route path='navbar' element={<Navbar/>}/>
+    <Route path='sidebar' element={<Sidebar/>}/>
     </Routes>
 
     </BrowserRouter>
