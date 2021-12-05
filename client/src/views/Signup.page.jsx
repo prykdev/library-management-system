@@ -44,7 +44,7 @@ export const Signup = () => {
                     <input 
                     className="input Custom-field"
                     type="email"
-                      placeholder="Your email"
+                      placeholder="Your Email"
                       onChange={e => setEmail(e.target.value)}
                       required
                     />
@@ -70,9 +70,11 @@ export const Signup = () => {
                     <br />
 
 
-                    {/* <button type='summit' onClick={clicked}>Create account</button> */}
-                    {/* <a href="/signup" onClick={clicked} className="btn10"> Create account </a> */}
-                    <a href="/signup" onClick={clicked} className="btn3"> Create account</a>
+                    <button 
+                    className="btn"
+                    type='summit' onClick={clicked}>Create account</button>
+                    
+                   
                 </div>
             </div>
         </div>

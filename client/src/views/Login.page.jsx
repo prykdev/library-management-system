@@ -25,15 +25,15 @@ export const Login = () => {
                     <div className="image">
                         <img src="../../layout/img.png" alt=""/>
                     </div>
-                    <div className='form'>
-                         <h2 >Let's Login</h2>
+                    <div className='formLogin'>
+                         <h3>Let's Login</h3>
                          <label >Email</label><br/>
                         
-                            <input className="Custom-field" 
+                        <input className="Custom-field" 
                             type="email"
                             placeholder= 'email'
                             onChange={e=>setEmail(e.target.value)}
-                            />
+                        />
                     
                         <br/>
                         <label >Password</label><br/>
@@ -42,8 +42,7 @@ export const Login = () => {
                         placeholder= 'password'
                          onChange = {e=>setPassword(e.target.value)}
                          /><br/>
-                         <a href="/signup" onClick={signin} className="btn3"> Login</a>
-                        {/* <button type="summit" className="btn3" onClick={signin}> Login</button> */}
+                        <button type="summit" className="btn1" onClick={signin}> Login</button>
                     </div>
             </div>
     
